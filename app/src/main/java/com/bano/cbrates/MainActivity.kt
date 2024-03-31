@@ -125,7 +125,8 @@ class MainActivity : AppCompatActivity() {
                 currencyAdapter = CurrencyAdapter(currencies)
                 currencyRecyclerView.adapter = currencyAdapter
                 val currentDateTime = LocalDateTime.now()
-                topTextView.text = "Дата и время последней корректной загрузки данных: " +  currentDateTime.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)
+                val dateTimeText =  getString(R.string.Date_time_string)
+                topTextView.text = dateTimeText.format(currentDateTime.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME))
                 progressBar.visibility = View.GONE
             }
         }

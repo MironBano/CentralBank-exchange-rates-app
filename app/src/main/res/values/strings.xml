@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CBrates</string>
+    <string name="Date_time_string">Дата и время последней корректной загрузки данных: %s</string>
 </resources>
